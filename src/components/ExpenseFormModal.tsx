@@ -2,7 +2,7 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 import { X, Plus, ChevronDown, Sparkles, Loader2 } from 'lucide-react';
 import { Category, Expense, TransactionType, PAYMENT_METHODS } from '../types';
 import { createExpense, updateExpense, createCategory } from '../services/api';
-import { suggestCategory, CategorizationResult, SOURCE_LABELS } from '../services/aiCategorization';
+import { suggestCategory, CategorizationResult, SOURCE_LABELS } from '../services/aiService';
 import { CATEGORY_COLORS } from '../utils/helpers';
 
 interface Props {
